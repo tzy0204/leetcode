@@ -43,8 +43,9 @@ public:
         // size = 4
         // v[4/2 - 1] = v[1] 
         // v[4/2] = v[2]
-        
+
         return n%2?v[n/2]:(v[n/2-1]+v[n/2])/2.0;
+        
     }
 };
 // @lc code=end
