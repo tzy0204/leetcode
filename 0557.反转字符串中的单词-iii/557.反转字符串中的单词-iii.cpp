@@ -21,7 +21,7 @@ class Solution {
 public:
     string reverseWords(string s) {
         string result,word;
-        char * c = &s[0];
+        //char * c = &s[0];
         int x = 0;
         for (int i =0; i < s.size(); i++) {
             if (s[i] == ' ') {
@@ -31,6 +31,7 @@ public:
                 x = i + 1;
             }
         }
+        // post process
         reverse(&s[x], &s[s.size()]);
         return s;
     }
