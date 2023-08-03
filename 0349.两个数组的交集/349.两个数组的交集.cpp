@@ -33,6 +33,7 @@ public:
         // check intersection
         for (int i = 0;i < nums2.size();i++) {
             if (map[nums2[i]] != 0) {
+               // add to vector if it's not duplicated value
                 bool exist = false;
                 for (int j = 0; j < res.size();j++) {
                     if (res[j] == nums2[i]) {
@@ -43,6 +44,7 @@ public:
                 if (!exist) res.push_back(nums2[i]);
                 }
         }
+        // return result
         return res;
     }
 };
